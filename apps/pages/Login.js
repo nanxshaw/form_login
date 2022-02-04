@@ -57,9 +57,9 @@ class Login extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.header}>
-          <View style={styles.fab_btn_back}>
+          <TouchableOpacity activeOpacity={.7} onPress={() => this.props.navigation.pop()} style={styles.fab_btn_back}>
             <Icon name="chevron-left" type="font-awesome" size={15} color="#9b9aa2" />
-          </View>
+          </TouchableOpacity>
           <View style={styles.head2} />
           <View style={styles.fab_btn_en}>
             <Text style={styles.tx_head}>EN</Text>

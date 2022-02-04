@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     },
     btn_primary_full:{
         backgroundColor: "#1571dd",
-        padding: 15,
+        height:45,
         margin: 10,
         borderRadius: 5,
         width:width_hp-20,
