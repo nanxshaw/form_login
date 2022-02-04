@@ -181,6 +181,7 @@ const styles = StyleSheet.create({
         borderRadius:20,
         borderColor:'#F2F2F2',
         flexDirection:'row',
+        alignItems:"center",
         padding:10,
         marginBottom:20
     },
@@ -204,13 +205,11 @@ const styles = StyleSheet.create({
         width:"33.33333%",
         justifyContent:'center',
         alignItems:'center',
-        flexDirection:'row'
-    },
-    img_utama:{
-        width:40,
-        height:40
+        flexDirection:'row',
+        padding:20
     },
     tx_utama:{
+        marginLeft:10,
         color:'#999',
         fontSize:12
     },

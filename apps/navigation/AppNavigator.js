@@ -3,7 +3,6 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StartPage from '../pages/StartPage';
 import Login from '../pages/Login';
-import Register from '../pages/Register';
 import Home from '../pages/Home';
 import { connect } from 'react-redux';
 
@@ -15,17 +14,12 @@ class AppNavigator extends Component {
         <Stack.Navigator>
           <Stack.Screen
             name="StartPage"
-            component={this.props.token != null ? Home : StartPage}
+            component={this.props.token == null ? Home : StartPage}
             options={{ headerShown: false }}
           />
           <Stack.Screen
             name="Login"
             component={Login}
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen
-            name="Register"
-            component={Register}
             options={{ headerShown: false }}
           />
           <Stack.Screen

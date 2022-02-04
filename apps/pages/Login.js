@@ -58,7 +58,7 @@ class Login extends Component {
       <View style={styles.container}>
         <View style={styles.header}>
           <TouchableOpacity activeOpacity={.7} onPress={() => this.props.navigation.pop()} style={styles.fab_btn_back}>
-            <Icon name="chevron-left" type="font-awesome" size={15} color="#9b9aa2" />
+            <Icon name="chevron-left" type="feather" size={23} color="#9b9aa2" />
           </TouchableOpacity>
           <View style={styles.head2} />
           <View style={styles.fab_btn_en}>

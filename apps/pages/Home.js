@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
 import { Icon } from 'react-native-elements';
+import { SvgUri } from 'react-native-svg';
 import styles from '../style/styles';
+import resolveAssetSource from 'react-native/Libraries/Image/resolveAssetSource';
 
 class Home extends Component {
   constructor(props) {
@@ -66,7 +68,7 @@ class Home extends Component {
         </View>
         <View style={styles.content}>
           <View style={styles.form_search}>
-            <Icon name="search" type="font-awesome" size={15} color="#999" />
+            <Icon name="search" type="feather" size={20} color="#999" />
             <Text style={styles.tx_search}>Search your job</Text>
           </View>
           <Text style={[styles.title_welcome, { marginBottom: 5 }]}>Welcome to Kerja 365</Text>
@@ -75,11 +77,10 @@ class Home extends Component {
             {
               menu_utama.map((key, i) => (
                 <View key={i} style={styles.col_utama}>
-                  <Image
-                    resizeMethod="resize"
-                    resizeMode="contain"
-                    source={key.img}
-                    style={styles.img_utama}
+                  <SvgUri
+                    width="20"
+                    height="20"
+                    uri={resolveAssetSource(key.img).uri}
                   />
                   <Text style={styles.tx_utama}>{key.title}</Text>
                 </View>
