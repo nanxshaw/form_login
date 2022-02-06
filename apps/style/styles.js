@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     },
     footer_start: {
         flexDirection: "row",
-        bottom:100,
+        bottom:20,
         position:'absolute'
     },
     btn_out: {
@@ -130,7 +130,8 @@ const styles = StyleSheet.create({
         padding:12,
         borderRadius:5,
         marginTop:7,
-        flexDirection:'row'
+        flexDirection:'row',
+        alignItems:'center'
     },
     tx_forget:{
         color:"#1571dd",
@@ -149,7 +150,7 @@ const styles = StyleSheet.create({
     },
     footer_login:{
         position:"absolute",
-        bottom:100,
+        bottom:30,
         alignSelf:'center'
     },
     tx_fot_login:{
@@ -159,7 +160,7 @@ const styles = StyleSheet.create({
     row_social:{
         flexDirection:'row',
         marginTop:20,
-        marginBottom:60
+        marginBottom:50
     },
     bg_icon_social:{
         alignSelf:'center',

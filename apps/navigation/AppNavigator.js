@@ -14,7 +14,7 @@ class AppNavigator extends Component {
         <Stack.Navigator>
           <Stack.Screen
             name="StartPage"
-            component={this.props.token == null ? Home : StartPage}
+            component={this.props.token != null ? Home : StartPage}
             options={{ headerShown: false }}
           />
           <Stack.Screen

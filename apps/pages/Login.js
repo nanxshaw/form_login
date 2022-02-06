@@ -83,7 +83,7 @@ class Login extends Component {
             <View style={styles.in}>
               <TextInput
                 placeholder="Enter your password"
-                style={{ width: "90%" }}
+                style={{ width: "90%", padding:0 }}
                 secureTextEntry={!show_password}
                 onChangeText={(password) => this.setState({ password })}
                 value={password}
